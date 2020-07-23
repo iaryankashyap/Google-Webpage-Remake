@@ -1,74 +1,47 @@
+
 * {
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.search-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #3878e5;
-  height: 40px;
-  border-radius: 40px;
-  padding: 10px;
-}
-.search-box:hover > .search-txt {
-  width: 300px;
-  padding: 0px 6px;
-}
-.search-box:hover > .search-btn {
-  background: white;
-  color: #00ca4d;
-  font-size: 13px;
-}
-
-.search-btn {
-  color: white;
+.op2 {
+  position: relative;
   float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #3878e5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: 0.4s;
-}
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: white;
-  font-size: 16px;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0px;
+  margin: 20px;
 }
 
-.logo {
-  text-align: center;
-  padding: 0;
+.inner {
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner:hover {
+  clip-path: circle(75%);
+  background: #3878e5;
+}
+.inner h1 {
+  color: white;
   margin: 0;
 }
-.logoo {
-  width: 280px;
-  height: auto;
-  margin-top:30px;
-  left: auto;
+.inner p {
+  color: white;
+  font-size: 0.8rem;
 }
-.av{
-    text-align: right;
+.inner span {
+  float: right;
+  
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: -12%;
+  margin-top: -4%;
 }
-.avatar {
-  width: 45px;
-  border-radius: 50px;
-  padding: 20px;
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
 }
+
+/*# sourceMappingURL=styles.css.map */
